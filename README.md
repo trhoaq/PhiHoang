@@ -1,31 +1,30 @@
-# DFD Level 2 - Hệ thống AI Finance Coaching (AWS)
+#level 2 dfd 
 
-```mermaid
 flowchart TD
     subgraph Người dùng
-        A[App/Web\n(Giao diện người dùng)]
+        A[App/Web (Giao diện người dùng)]
     end
 
     subgraph API Gateway + Lambda
         B[Amazon API Gateway]
-        C[AWS Lambda\n(Xử lý nghiệp vụ)]
+        C[AWS Lambda (Xử lý nghiệp vụ)]
     end
 
     subgraph ML/LLM
-        D[SageMaker\n(Khuyến nghị ML)]
-        E[Amazon Bedrock\n(LLM + RAG)]
-        F[Kendra\n(Search)]
+        D[SageMaker (Khuyến nghị ML)]
+        E[Amazon Bedrock (LLM + RAG)]
+        F[Kendra (Search)]
     end
 
     subgraph Dữ liệu & Tri thức
-        G[DynamoDB\n(Hồ sơ, Giao dịch)]
-        H[S3\n(Tin tức, Nội dung RAG)]
+        G[DynamoDB (Hồ sơ, Giao dịch)]
+        H[S3 (Tin tức, Nội dung RAG)]
     end
 
     subgraph Tính năng mở rộng
-        I[Recommendation System\n6 Hũ + Mục tiêu]
-        J[Gamification\nStreak + Milestone]
-        K[Amazon SNS/Pinpoint\n(Thông báo đẩy)]
+        I[Recommendation System (6 Hũ + Mục tiêu)]
+        J[Gamification (Streak + Milestone)]
+        K[Amazon SNS/Pinpoint (Thông báo đẩy)]
     end
 
     A --> B
